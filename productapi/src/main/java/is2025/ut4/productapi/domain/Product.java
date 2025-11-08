@@ -33,6 +33,6 @@ public class Product {
     public double getTax() { return tax; }
     public void setTax(double tax) { this.tax = tax; }
 
-    public double getFinalPrice() { return price*tax; }
+    public double getFinalPrice() { return price * (1 + tax); }
 
 }
